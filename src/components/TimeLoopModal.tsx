@@ -17,8 +17,8 @@ const TimeLoopModal = ({ noCount, noBtnSize, onYes, onNo }: Props) => {
   const currentPhoto = photos[(noCount - 1) % photos.length];
 
   return (
-    <div className="fixed inset-0 z-[100] bg-black/95 flex items-center justify-center p-4">
-      <div className="text-center max-w-md animate-modal-pop">
+    <div className="fixed inset-0 z-[100] bg-black/95 flex items-center justify-center p-4 overflow-y-auto">
+      <div className="text-center max-w-md animate-modal-pop my-auto">
         <p className="animate-blink-glow text-love-rose font-display text-2xl md:text-3xl font-bold mb-4">
           ⏰ TIME LOOP ACTIVATED ⏰
         </p>
